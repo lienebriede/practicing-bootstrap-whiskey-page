@@ -1,0 +1,80 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.alert-container {}
+
+.callout-container {
+    height: 110vh;
+    /*This is entire height of the window and will change*/
+    background: url("/assets/images/whiskey-background.jpg") no-repeat bottom right fixed;
+    /*center vertically and horizontally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/*Makes the background pic darker*/
+.opaque-overlay {
+    position: absolute;
+    /*This is an absolute child to the relative parent callout-container*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.qoutes-container {}
+
+.features-container {}
+
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: azure;
+}
+
+.jumbotron .lead {
+    color: azure;
+    margin: 25px 0;
+}
+
+.btn--cta {
+    font-weight: bold;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: white;
+    border-radius: 30px;
+    width: 150px;
+}
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: aquamarine
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*Pseudo elements for buttons*/
+.btn--cta:hover,
+.btn--cta:active,
+.btn--cta:focus,
+.btn--cta:active:focus {
+    background-color: rgb(8, 206, 206);
+    border-color: rgb(8, 206, 206);
+    color: white;
+}
