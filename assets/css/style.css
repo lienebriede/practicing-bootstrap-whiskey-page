@@ -2,17 +2,11 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.alert-container .col-12 {
-    padding-left: 0;
-    padding-right: 0;
-}
+/* Containers */
 
-.site-wide-alert {
-    border-radius: 0;
-    margin-bottom: 0;
-    padding: 5px 15px;
-    background-color: rgb(241, 234, 37);
-    border-color: rgb(241, 234, 37);
+.container-wrapper {
+    background-color: #f05f40;
+    color: white;
 }
 
 .callout-container {
@@ -27,6 +21,11 @@ body {
     position: relative;
 }
 
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 /*Makes the background pic darker*/
 .opaque-overlay {
     position: absolute;
@@ -38,9 +37,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.qoutes-container {}
-
-.features-container {}
+/* Navbar */
 
 .navalert-container {
     position: absolute;
@@ -72,6 +69,8 @@ body {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
+/* Jumbotron */
+
 .jumbotron {
     background-color: transparent;
 }
@@ -87,14 +86,13 @@ body {
     margin: 25px 0;
 }
 
-.btn--cta {
-    font-weight: bold;
-    background-color: aquamarine;
-    border-color: aquamarine;
+.jumbotron-header {
     color: white;
-    border-radius: 30px;
-    width: 160px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
+
+/* Block dividers */
 
 .block-divider {
     width: 75px;
@@ -103,10 +101,15 @@ body {
     background-color: aquamarine
 }
 
-.jumbotron-header {
-    color: white;
+/* Buttons */
+
+.btn--cta {
     font-weight: bold;
-    margin-bottom: 30px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: white;
+    border-radius: 30px;
+    width: 160px;
 }
 
 /*Pseudo elements for buttons*/
@@ -117,4 +120,59 @@ body {
     background-color: rgb(8, 206, 206);
     border-color: rgb(8, 206, 206);
     color: white;
+}
+
+/* Alert */
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: rgb(241, 234, 37);
+    border-color: rgb(241, 234, 37);
+}
+
+/* Page Headers */
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* Quotes */
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
